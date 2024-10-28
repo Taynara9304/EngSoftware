@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_RN7tsJVEEe-cRNhQd2m02Q" name="trabalhoEngSoftware">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_RQc2MJVEEe-cRNhQd2m02Q">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_f69GUJVFEe-cRNhQd2m02Q" name="Usuário"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_oV4rQJVFEe-cRNhQd2m02Q" name="Registrar de entrada e saída">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Z4aNsJVIEe-cRNhQd2m02Q" name="ExtensionPoint1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_svGuQJVFEe-cRNhQd2m02Q" name="Obter histórico de movimentação de estoque">
+    <extend xmi:type="uml:Extend" xmi:id="_Z4YYgJVIEe-cRNhQd2m02Q" extendedCase="_oV4rQJVFEe-cRNhQd2m02Q" extensionLocation="_Z4aNsJVIEe-cRNhQd2m02Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_21iywJVFEe-cRNhQd2m02Q" name="Emitir alertas automáticos"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_7OTiwJVFEe-cRNhQd2m02Q" name="Emitir relatório de estoque">
+    <include xmi:type="uml:Include" xmi:id="_Dwuk4JVIEe-cRNhQd2m02Q" addition="_oV4rQJVFEe-cRNhQd2m02Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FvRKoJVHEe-cRNhQd2m02Q" memberEnd="_FvVcEJVHEe-cRNhQd2m02Q _FvX4UJVHEe-cRNhQd2m02Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FvTm4JVHEe-cRNhQd2m02Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FvUN8JVHEe-cRNhQd2m02Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FvVcEJVHEe-cRNhQd2m02Q" name="registrar de entrada e saída" type="_oV4rQJVFEe-cRNhQd2m02Q" association="_FvRKoJVHEe-cRNhQd2m02Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FvX4UJVHEe-cRNhQd2m02Q" name="usuário" type="_f69GUJVFEe-cRNhQd2m02Q" association="_FvRKoJVHEe-cRNhQd2m02Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RGC1oJVHEe-cRNhQd2m02Q" memberEnd="_RGEDwpVHEe-cRNhQd2m02Q _RGEq0JVHEe-cRNhQd2m02Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_RGEDwJVHEe-cRNhQd2m02Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_RGEDwZVHEe-cRNhQd2m02Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RGEDwpVHEe-cRNhQd2m02Q" name="emitir alertas automáticos" type="_21iywJVFEe-cRNhQd2m02Q" association="_RGC1oJVHEe-cRNhQd2m02Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_RGEq0JVHEe-cRNhQd2m02Q" name="usuário" type="_f69GUJVFEe-cRNhQd2m02Q" association="_RGC1oJVHEe-cRNhQd2m02Q"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SoecQJVIEe-cRNhQd2m02Q" memberEnd="_SogRcJVIEe-cRNhQd2m02Q _SogRcZVIEe-cRNhQd2m02Q">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SofqYJVIEe-cRNhQd2m02Q" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SofqYZVIEe-cRNhQd2m02Q" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SogRcJVIEe-cRNhQd2m02Q" name="obter histórico de movimentação de estoque" type="_svGuQJVFEe-cRNhQd2m02Q" association="_SoecQJVIEe-cRNhQd2m02Q"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_SogRcZVIEe-cRNhQd2m02Q" name="usuário" type="_f69GUJVFEe-cRNhQd2m02Q" association="_SoecQJVIEe-cRNhQd2m02Q"/>
+  </packagedElement>
+</uml:Model>
